@@ -1,0 +1,314 @@
+:root {
+    --font-color-2: black;
+    --font-color: #86B6F6;
+    --background-color: #EEF5FF;
+}
+
+[data-theme='dark'] {
+    --font-color-2: aliceblue;
+    --font-color: #9EC8B9;
+    --background-color: #092635;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.app-container {
+    color: var(--font-color);
+    background-color: var(--background-color);
+    min-height: 100vh;
+    transition: all ease-in-out 0.5s;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 35px;
+    border-bottom: 3px solid;
+    height: 70px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-top: 6px;
+}
+
+header nav ul li a {
+    margin: 10px 15px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+header button {
+    margin: 0 7px;
+    background: transparent;
+    border: none;
+    color: var(--font-color);
+    transition: 0.3s;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    padding-bottom: 5px;
+}
+
+header svg {
+    font-size: 30px;
+}
+
+header button svg {
+    padding-top: 5px;
+}
+
+header button:hover {
+    color: var(--font-color-2);
+}
+
+header nav ul li a.active {
+    color: var(--font-color-2);
+}
+
+header nav ul li a:hover {
+    color: var(--font-color-2);
+}
+
+.content {
+    padding: 30px 35px;
+    color: var(--font-color-2);
+}
+
+.content ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content ul li {
+    width: 300px;
+    border: 2px solid var(--font-color);
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 15px;
+    position: relative;
+    padding-bottom: 55px;
+}
+
+.content ul li h3 {
+    font-size: 20px;
+    color: var(--font-color-2);
+    text-decoration: underline;
+    margin-bottom: 2px;
+}
+
+.content .tanggal {
+    font-style: italic;
+    font-size: 13px;
+    opacity: 0.8;
+    margin-bottom: 9px;
+}
+
+.content ul li .action {
+    display: flex;
+    justify-content: end;
+    margin: 15px 0;
+    position: absolute;
+    bottom: 1px;
+    right: 13px;
+}
+
+.content ul li .action button {
+    margin-left: 10px;
+    background: transparent;
+    border: none;
+}
+
+.content ul li svg {
+    font-size: 23px;
+    color: var(--font-color);
+    transition: 0.3s;
+
+}
+
+.content ul li svg:hover {
+    color: var(--font-color-2);
+}
+
+.info {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    margin: 100px;
+}
+
+.info-load {
+    font-size: 35px;
+    font-style: italic;
+    text-align: center;
+    margin: 200px;
+    color: var(--font-color-2);
+    letter-spacing: 5px
+}
+
+.content .pencarian {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: var(--background-color);
+    border: 2px solid var(--font-color);
+    border-radius: 5px;
+    color: var(--font-color);
+}
+
+.content form {
+    border: 2px solid;
+    border-radius: 5px;
+    width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.content .tanya {
+    width: 800px;
+    margin: 30px auto;
+}
+
+.content form input,
+.content form textarea {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--background-color);
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    color: var(--font-color);
+}
+
+.content form textarea {
+    height: 100px;
+}
+
+.content form button {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: var(--font-color);
+    border: 2px solid var(--font-color-2);
+    border-radius: 5px;
+    color: var(--background-color);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.content form button:hover {
+    color: var(--font-color-2);
+    background-color: var(--background-color);
+    border: 2px solid var(--font-color);
+}
+
+.content .judul-detail {
+    margin-top: 35px;
+    color: var(--font-color-2);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.content .p-detail {
+    width: 90%;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.content .action-detail {
+    display: flex;
+    justify-content: end;
+    margin: 15px 0;
+    width: 95%;
+}
+
+.content .action-detail button {
+    margin-left: 10px;
+    background: transparent;
+    border: none;
+    color: var(--font-color);
+    transition: 0.3s;
+}
+
+.content .action-detail svg {
+    font-size: 30px;
+}
+
+.content .action-detail button:hover {
+    color: var(--font-color-2);
+}
+
+/*support google chrome*/
+input::-webkit-input-placeholder {
+    color: var(--font-color-2);
+}
+
+/*support mozilla*/
+input:-moz-input-placeholder {
+    color: var(--font-color-2);
+}
+
+/*support internet explorer*/
+input:-ms-input-placeholder {
+    color: var(--font-color-2);
+}
+
+.not-found {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 50px;
+    width: 700px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.not-found h2 {
+    font-size: 27px;
+    color: red;
+}
+
+@media screen and (min-width: 650px) {
+    .notes-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .detail-page__title {
+        font-size: 64px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .notes-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .notes-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
